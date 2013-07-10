@@ -42,6 +42,9 @@
                             map = $that.attr('usemap').replace('#', ''),
                             c = 'coords';
                         
+                        if (!wPercent || !hPercent) 
+                            return;
+                        
                         $('map[name="' + map + '"]').find('area').each(function() {
                             var $this = $(this);
                             if (!$this.data(c))

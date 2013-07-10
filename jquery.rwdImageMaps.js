@@ -76,7 +76,8 @@
             });
         };
         $(window).resize(rwdImageMap).trigger('resize');
-        
+        $img.on('rwdImageMap.update', rwdImageMap);
+
         return this;
     };
 })(jQuery);
